@@ -8,8 +8,9 @@ const r = 5
 // TODO: create the circle object here
 
 const circle = {
-    circumference() { return 2*Math.PI*r },
-    area() {return Math.PI*Math.pow(r,2)}
+    radius: r,
+    circumference() { return 2*Math.PI*this.radius },
+    area() {return Math.PI*Math.pow(this.radius,2)}
 }
 
 console.log(`Its circumference is ${circle.circumference()}`);
