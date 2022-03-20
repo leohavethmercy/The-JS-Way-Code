@@ -4,15 +4,16 @@
 
 const values = [3, 11, 7, 2, 9, 10];
 
-const values2 = [];
+// not needed
+// const values2 = [];
 
-for (nums of values) {
-    values2.push(nums)
-}
+// for (nums of values) {
+//     values2.push(nums)
+// }
 
 let maximum = 0
 
-for (nums of values2) {
+for (nums of values) {
     if (nums > maximum){
         maximum = nums
     }

@@ -3,10 +3,16 @@
     // "stop". The program then shows each of these words, except "stop".
 
     const wordList = []
-    let currentWord = prompt('Whats the word?')
+    let currentWord = ''
+    
     while (currentWord != 'stop') {
+        currentWord = prompt('Whats the word?');
+
+        if (currentWord != 'stop'){
         wordList.push(currentWord);
+       }
+
     }
-    if (currentWord == 'stop'){
-        console.log(wordList);
-    }
+
+    console.log('The following words have been entered')
+    console.log(wordList);
